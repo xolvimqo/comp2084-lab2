@@ -11,7 +11,9 @@ namespace Lab2.Controllers
         // GET: Products
         public ActionResult Index()
         {
-            return View(Details(""));
+            string[] products = {"Laptop", "Tablet", "Desktop"};
+            ViewData["products"] = products;
+            return View();
         }
 
         public ActionResult Details(string product)

@@ -3,5 +3,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Details</h2>
-<h3>@ViewBag.Message</h3>
+<h2>Index</h2>
+
+<div>
+    <ul>
+        @foreach(string product in ViewBag.products)
+        {
+            <li><a href="@Url.Action("Details", "Products", new { product = @product }, null)">@product</a></li>
+        }
+    </ul>
+</div>
