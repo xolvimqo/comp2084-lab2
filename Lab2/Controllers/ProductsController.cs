@@ -16,7 +16,6 @@ namespace Lab2.Controllers
 
         public ActionResult Details(string product)
         {
-            ViewData["Product"] = product;
             ViewBag.message = "You selected product: " + product;
             return View();
         }
