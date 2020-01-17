@@ -11,7 +11,7 @@ namespace Lab2.Controllers
         // GET: Products
         public ActionResult Index()
         {
-            return View();
+            return View(Details(""));
         }
 
         public ActionResult Details(string product)

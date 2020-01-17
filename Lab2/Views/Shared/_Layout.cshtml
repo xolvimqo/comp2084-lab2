@@ -23,12 +23,12 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li class="k-dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><asp:Literal runat="server" Text="<%$Resources:Resources, Language%>" />Details</a>
-                    <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Laptop", "Details", "Products", new {product = "Laptop" }, null)</li>
-                        <li>@Html.ActionLink("Tablet", "Details", "Products", new {product = "Tablet" }, null)</li>
-                        <li>@Html.ActionLink("Desktop", "Details", "Products", new {product = "Desktop"}, null)</li>
-                    </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><asp:Literal runat="server" Text="<%$Resources:Resources, Language%>" />Details</a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Laptop", "Details", "Products", new { product = "Laptop" }, null)</li>
+                            <li>@Html.ActionLink("Tablet", "Details", "Products", new { product = "Tablet" }, null)</li>
+                            <li>@Html.ActionLink("Desktop", "Details", "Products", new { product = "Desktop" }, null)</li>
+                        </ul>
                     </li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
